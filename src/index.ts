@@ -1,8 +1,8 @@
 import { Repo } from "./Repo";
-import { GithubApiService } from "./service";
+import { Service } from "./service";
 import { User } from "./User";
 import * as _ from 'lodash';
-let svc: GithubApiService = new GithubApiService();
+let svc: Service = new Service();
 
 svc.getUserInfo("bmizerany", (user: User) => {
   svc.getRepos("bmizerany", (repos: Repo[]) => {

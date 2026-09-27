@@ -1,5 +1,4 @@
-{
- var a=10;
- let b=20;
- const c =20;
-}
+class A { id:number=123;}
+class B extends A{}
+let b:B = new B();
+console.log(b.id);

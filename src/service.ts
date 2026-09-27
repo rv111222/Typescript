@@ -7,7 +7,7 @@ const options: any = {
   },
   json: true,
 };
-export class GithubApiService {
+export class Service {
   getUserInfo(username: string, cb: (user: User) => any) {
     request.get(
       "https://api.github.com/users/" + username,
